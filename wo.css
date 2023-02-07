@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.cont
+{
+    position: relative;
+}
+.cont h2
+{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+}
+.cont h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.cont h2:nth-child(2)
+{
+    color: #03a9f4;
+    animation: animate 1s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        clip-path: polygon(0% 37%, 14% 37%, 30% 46%, 39% 57%, 50% 64%, 68% 68%, 86% 68%, 97% 65%, 100% 63%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 87%, 8% 79%, 17% 70%, 30% 66%, 42% 61%, 47% 63%, 61% 65%, 69% 65%, 80% 63%, 98% 58%);
+    }
+}
